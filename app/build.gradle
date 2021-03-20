@@ -10,6 +10,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -29,16 +30,16 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-   // implementation 'com.androidX.support:appcompat-v7:30.0.0'
-    //implementation 'com.androidX.support:cardview-v7:30.0.0'
-   // implementation 'com.androidX.support:support-v4:30.0.0'
-   // implementation 'com.androidX.support:design:30.0.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'com.google.firebase:firebase-auth:20.0.3'
     implementation 'com.google.firebase:firebase-messaging:21.0.1'
     implementation platform('com.google.firebase:firebase-bom:26.6.0')
     implementation 'com.google.android.gms:play-services-auth:19.0.0'
     implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.firebase:firebase-firestore:22.1.1'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
     testImplementation 'junit:junit:4.12'
     //androidTestImplementation 'com.androidX.support.test:runner:1.0.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

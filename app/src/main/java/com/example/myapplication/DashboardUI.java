@@ -4,25 +4,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
-import com.google.firebase.auth.FirebaseAuth;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class DashboardUI extends AppCompatActivity {
-    Button btnLogout;
-    FirebaseAuth mAuth;
+    Button contact_btn,finddr_btn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard_ui);
 
-        btnLogout = findViewById(R.id.logout_btn);
-        mAuth = FirebaseAuth.getInstance();
+        contact_btn = findViewById(R.id.button_contact);
+        finddr_btn = findViewById(R.id.button_finddr);
 
-        btnLogout.setOnClickListener(v -> {
-            mAuth.signOut();
-            Intent intent = new Intent(DashboardUI.this,LoginUI.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_NEW_TASK);
-        });
+        contact_btn.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(),ContactUI.class)));
+        finddr_btn.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(),FindDrUI.class)));
+
     }
 }

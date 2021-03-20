@@ -113,7 +113,7 @@ public class RegisterUI extends AppCompatActivity {
             try {
                 // Google Sign In was successful, authenticate with Firebase
                 GoogleSignInAccount account = task.getResult(ApiException.class);
-                firebaseAuthWithGoogle(account.getIdToken());
+                firebaseAuthWithGoogle(Objects.requireNonNull(account).getIdToken());
             } catch (ApiException e) {
                 // Google Sign In failed, update UI appropriately
                 Toast.makeText(this, e.toString(), Toast.LENGTH_SHORT).show();
@@ -124,7 +124,7 @@ public class RegisterUI extends AppCompatActivity {
     private void firebaseAuthWithGoogle(String idToken) {
         AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
         FirebaseAuth mAuth = null;
-        mAuth.signInWithCredential(credential)
+        Objects.requireNonNull(mAuth).signInWithCredential(credential)
                 .addOnCompleteListener(this, task -> {
                     if (task.isSuccessful()) {
                         // Sign in success, update UI with the signed-in user's information

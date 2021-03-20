@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ba"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appointmentui">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dr_recyclerview"
+        android:layout_width="368dp"
+        android:layout_height="589dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="0dp"
+        android:background="#B3F2F9F8"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="308dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="642dp"
+        android:autofillHints="Search"
+        android:background="@drawable/search_bg"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:hint="@string/search"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColorHint="#528BB8" />
+
+</RelativeLayout>

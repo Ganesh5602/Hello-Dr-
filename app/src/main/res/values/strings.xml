@@ -5,5 +5,36 @@
     <string name="password">Password</string>
     <string name="load">load</string>
     <string name="email">Email</string>
-    <string name="logout">LOGOUT</string>
+    <string name="date">Date</string>
+    <string name="current_location">Current Location</string>
+    <string name="time">Time</string>
+    <string name="dr_name">Dr Name</string>
+    <string name="specialist">Specialist</string>
+    <string name="location">Location</string>
+    <string name="search">Search</string>
+
+    <string-array name="Spinner_items">
+        <item>Select any one</item>
+        <item>Allergists</item>
+        <item>Cardiologists</item>
+        <item>Dermatologists</item>
+        <item>Endocrinologists</item>
+        <item>Gynecologists</item>
+        <item>Neurologists</item>
+        <item>Ophthalmologists</item>
+        <item>Pediatricians</item>
+    </string-array>
+
+    <string-array name="Spinner_items2">
+        <item>Select Location</item>
+        <item>Ariyalur</item>
+        <item>Chennai</item>
+        <item>Coimbatore</item>
+        <item>Dindigul</item>
+        <item>Erode</item>
+        <item>Kancheepuram</item>
+        <item>Madurai</item>
+        <item>Namakkal</item>
+        <item>Salem</item>
+    </string-array>
 </resources>
