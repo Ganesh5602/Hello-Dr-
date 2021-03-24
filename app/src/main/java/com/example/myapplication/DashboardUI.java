@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class DashboardUI extends AppCompatActivity {
@@ -21,6 +22,15 @@ public class DashboardUI extends AppCompatActivity {
         contact_btn.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(),ContactUI.class)));
         finddr_btn.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(),FindDrUI.class)));
         emergency_btn.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(),EmergencyUI.class)));
+
+    }
+    @Override
+    public void onBackPressed(){
+        new AlertDialog.Builder(this)
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .setTitle("Exit Hello Dr!")
+                .setMessage("Are you sure want to Exit?").setPositiveButton("Yes", (dialog, which) -> finish())
+        .setNegativeButton("No",null).show();
 
     }
 }
