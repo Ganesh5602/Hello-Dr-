@@ -7,7 +7,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class DashboardUI extends AppCompatActivity {
-    Button contact_btn,finddr_btn;
+    Button contact_btn,finddr_btn,emergency_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,9 +16,11 @@ public class DashboardUI extends AppCompatActivity {
 
         contact_btn = findViewById(R.id.button_contact);
         finddr_btn = findViewById(R.id.button_finddr);
+        emergency_btn = findViewById(R.id.button_ambulance);
 
         contact_btn.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(),ContactUI.class)));
         finddr_btn.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(),FindDrUI.class)));
+        emergency_btn.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(),EmergencyUI.class)));
 
     }
 }

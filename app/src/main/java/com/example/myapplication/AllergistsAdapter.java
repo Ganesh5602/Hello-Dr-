@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-@SuppressWarnings("unchecked")
+
 public class AllergistsAdapter extends RecyclerView.Adapter<AllergistsAdapter.ViewHolder>{
     ArrayList<Allergists_Dr> arrayList;
     ArrayList<Allergists_Dr> searchBarList;
@@ -93,8 +93,10 @@ public class AllergistsAdapter extends RecyclerView.Adapter<AllergistsAdapter.Vi
                 return filterResults;
             }
 
+
             @Override
             protected void publishResults(CharSequence constraint, FilterResults results) {
+                //noinspection unchecked
                 searchBarList = (ArrayList<Allergists_Dr>)results.values;
                 notifyDataSetChanged();
 

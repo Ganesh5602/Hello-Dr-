@@ -76,7 +76,7 @@ public class FindDrUI extends AppCompatActivity implements AdapterView.OnItemSel
         });
 
         //search btn
-        search_button.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(),AppointmentUI.class)));
+        search_button.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), ListofdrUI.class)));
     }
 
     //implements methods

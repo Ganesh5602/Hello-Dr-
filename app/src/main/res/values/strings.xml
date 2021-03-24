@@ -6,12 +6,15 @@
     <string name="load">load</string>
     <string name="email">Email</string>
     <string name="date">Date</string>
-    <string name="current_location">Current Location</string>
     <string name="time">Time</string>
     <string name="dr_name">Dr Name</string>
     <string name="specialist">Specialist</string>
     <string name="location">Location</string>
     <string name="search">Search</string>
+    <string name="driver_name">Driver name</string>
+    <string name="company">Company</string>
+    <string name="driver_location">Driver Location</string>
+    <string name="todo">TODO</string>
 
     <string-array name="Spinner_items">
         <item>Select any one</item>
@@ -30,6 +33,7 @@
         <item>Ariyalur</item>
         <item>Chennai</item>
         <item>Coimbatore</item>
+        <item>Cuddalore</item>
         <item>Dindigul</item>
         <item>Erode</item>
         <item>Kancheepuram</item>

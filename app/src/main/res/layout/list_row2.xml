@@ -14,48 +14,49 @@
         android:padding="8dp">
 
         <ImageView
+            android:id="@+id/imgdriver"
             android:layout_width="75dp"
             android:layout_height="75dp"
-            android:id="@+id/imgView"
             android:padding="4dp"
-            android:src="@drawable/dr1"/>
+            android:src="@drawable/ambtn"
+            android:contentDescription="@string/todo" />
         <TextView
             style="?android:textAppearanceLarge"
             android:textColor="@android:color/background_dark"
             android:layout_alignParentTop="true"
-            android:layout_toEndOf="@id/imgView"
-            android:text="@string/dr_name"
-            android:id="@+id/txtdrname"
+            android:layout_toEndOf="@id/imgdriver"
+            android:text="@string/driver_name"
+            android:id="@+id/txtdrivername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
-            android:layout_toRightOf="@id/imgView" />
+            android:layout_toRightOf="@id/imgdriver" />
 
         <TextView
-            android:id="@+id/txtspl"
+            android:id="@+id/txtcompany"
             style="?android:textAppearanceSearchResultTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txtdrname"
+            android:layout_below="@+id/txtdrivername"
             android:layout_marginStart="11dp"
             android:layout_marginLeft="11dp"
-            android:layout_toEndOf="@id/imgView"
-            android:layout_toRightOf="@id/imgView"
-            android:text="@string/specialist"
+            android:layout_toEndOf="@id/imgdriver"
+            android:layout_toRightOf="@id/imgdriver"
+            android:text="@string/company"
             android:textColor="#3F51B5" />
 
         <TextView
-            android:id="@+id/txtlocation"
+            android:id="@+id/txtdriverlocation"
             style="?android:textAppearanceMedium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/txtspl"
+            android:layout_below="@id/txtcompany"
             android:layout_marginStart="11dp"
             android:layout_marginLeft="11dp"
-            android:layout_toEndOf="@id/imgView"
-            android:layout_toRightOf="@id/imgView"
-            android:text="@string/location"
+            android:layout_toEndOf="@id/imgdriver"
+            android:layout_toRightOf="@id/imgdriver"
+            android:text="@string/driver_location"
             android:textColor="#711212" />
     </RelativeLayout>
 
