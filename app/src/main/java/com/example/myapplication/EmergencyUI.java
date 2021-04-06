@@ -11,7 +11,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class EmergencyUI extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
-    Spinner Amb_location;
+   public Spinner Amb_location;
     Button SearchBtn;
 
     @Override

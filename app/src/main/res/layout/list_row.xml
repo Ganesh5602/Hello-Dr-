@@ -19,18 +19,20 @@
             android:id="@+id/imgView"
             android:padding="4dp"
             android:src="@drawable/dr1"/>
+
         <TextView
-            style="?android:textAppearanceLarge"
-            android:textColor="@android:color/background_dark"
-            android:layout_alignParentTop="true"
-            android:layout_toEndOf="@id/imgView"
-            android:text="@string/dr_name"
             android:id="@+id/txtdrname"
+            style="?android:textAppearanceLarge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
+            android:layout_alignParentTop="true"
             android:layout_marginStart="8dp"
-            android:layout_toRightOf="@id/imgView" />
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@id/imgView"
+            android:layout_toRightOf="@id/imgView"
+            android:text="@string/dr_name"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txtspl"

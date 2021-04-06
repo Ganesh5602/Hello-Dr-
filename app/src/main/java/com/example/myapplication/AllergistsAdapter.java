@@ -52,6 +52,7 @@ public class AllergistsAdapter extends RecyclerView.Adapter<AllergistsAdapter.Vi
             intent.putExtra("Location", searchBarList.get(position).getLocation());
             mContext.startActivity(intent);
         });
+
     }
 
     @Override

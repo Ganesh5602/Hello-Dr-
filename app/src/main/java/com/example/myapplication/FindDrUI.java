@@ -39,7 +39,7 @@ public class FindDrUI extends AppCompatActivity implements AdapterView.OnItemSel
 
         SplSpinner = findViewById(R.id.splname_spinner);
         CurrLocSpinner = findViewById(R.id.currLoc_spinner);
-        date_app = findViewById(R.id.editTextDate);
+        date_app = findViewById(R.id.appdate);
         time_app = findViewById(R.id.editTextTime);
         search_button = findViewById(R.id.search_btn);
 
